@@ -7,7 +7,9 @@ las = [[1,2,3,4],
 ]
 
 las = np.array(las)
-print(las)
+# np.put(las, [0, 3, 7], 40)
+np.put(las, np.where(las == 2), 40)
+print(np.where(las == 2))
 
-np.random.shuffle(las)
+# np.random.shuffle(las)
 print(las)
